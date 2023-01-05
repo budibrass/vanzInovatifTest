@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/navbar';
+import { useNavigate } from 'react-router-dom';
 import './css/about/main.css';
 
 const About = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if(!localStorage.token) {
+      navigate('/login')
+    }
+  }, [navigate]);
+
   return (
     <>
       <div className='w-100 about' style={{ minHeigth: '100vh', backgroundColor: '#f9ede0' }}>
