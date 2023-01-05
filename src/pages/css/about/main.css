@@ -1,0 +1,24 @@
+.about {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: #FFEDDB; */
+    background-image: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+#home .text-home {
+    font-family: Imprint MT Shadow;
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(10%,-50%);
+}
+
+.text-home p:nth-child(1),.text-home .details{
+	color:#6c707c;
+	font-size: 20px;
+}
